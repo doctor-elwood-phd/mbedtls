@@ -1426,21 +1426,6 @@ static int x509_crt_parse_der_core(mbedtls_x509_crt *crt,
         mbedtls_x509_crt_free(crt);
         return ret;
     }
-    
-    {
-        size_t i;
-        int is_serial_zero = 1;
-        for(i = 0; i < crt->serial.len; i++) {
-            if(crt->serial.p[i] != 0) {
-                is_serial_zero = 0;
-                break;
-            }
-        }
-        if(is_serial_zero) {
-            mbedtls_x509_crt_free(crt);
-            return MBEDTLS_ERR_X509_INVALID_SERIAL;
-        }
-    }
 
     if ((ret = mbedtls_x509_get_sig_alg(&crt->sig_oid, &sig_params1,
                                         &crt->sig_md, &crt->sig_pk)) != 0) {
