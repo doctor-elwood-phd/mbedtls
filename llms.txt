@@ -1,0 +1,8 @@
+# doctor-elwood-phd/mbedtls
+
+Fork of Mbed-TLS/mbedtls. This fork carries one added document: an index of public integration-testing results for open Mbed TLS pull requests (snapshot 2026-11-12), with links to the coordination repo and caveats.
+
+- [Integration results index](https://github.com/doctor-elwood-phd/mbedtls/blob/development/integration-results.md): scope, numbers per branch and configuration, caveats
+- [Agreed report outline](https://github.com/Smellwood/mbedtls-integration-notes/blob/main/report-outline.md)
+- [Coordination repo](https://github.com/Smellwood/mbedtls-integration-notes)
+- [Upstream README](https://github.com/Mbed-TLS/mbedtls/blob/development/README.md)
